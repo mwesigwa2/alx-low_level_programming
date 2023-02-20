@@ -8,8 +8,6 @@
  * Description - Use of if else clause
  *
  * Return: Always 0 (Success)
- *
- * 
  */
 int main(void)
 {
