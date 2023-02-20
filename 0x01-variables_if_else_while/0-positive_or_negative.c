@@ -2,8 +2,8 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/** 
- * betty style doc for function main goes there 
+/**
+ * betty style doc for function main goes there
  * main - Assign a random number to a variable
  *
  * Return: Always 0 (Success)
