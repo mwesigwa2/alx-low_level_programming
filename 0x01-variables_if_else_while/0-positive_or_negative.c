@@ -3,12 +3,13 @@
 /* more headers goes there */
 #include <stdio.h>
 /**
- * betty style doc for function main goes there
  * main - Assign a random number to a variable
+ *
+ * Description - Use of if else clause
  *
  * Return: Always 0 (Success)
  *
- * Description - Use of if else clause
+ * 
  */
 int main(void)
 {
