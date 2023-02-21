@@ -7,5 +7,5 @@
  */
 int main(void)
 {
-	return (write(1,"_putchar\n", 9));
+	return (write(1, "_putchar\n", 9));
 }
