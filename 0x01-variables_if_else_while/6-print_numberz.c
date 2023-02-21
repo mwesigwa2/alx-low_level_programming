@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  *
- * Description - Program that prints single digit 
+ * Description - Program that prints single digit
  * numbers of base 10 starting from 0, followed
  * by a new line. Using putchar
  */
