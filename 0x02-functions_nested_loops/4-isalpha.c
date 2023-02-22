@@ -2,7 +2,7 @@
 /**
  * _isalpha - function that checks for alphabetic character
  *
- *
+ * @c: character to be checked
  *
  * Return: Always 1 if c is a letter, 0 otherwise
  *
@@ -10,10 +10,10 @@
  */
 int _isalpha(int c);
 {
-	if (c = 'a' || c = 'A')
+	if (c == 'a' || c == 'A')
 	{
 		return (1);
-        }
+	}
 	else
 	{
 		return (0);
