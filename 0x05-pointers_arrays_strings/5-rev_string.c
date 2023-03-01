@@ -7,45 +7,23 @@
  */
 void rev_string(char *s)
 {
-	int x = 0, len;
+	char yy;
+	int x, y, len;
 
-	len = _strlen(s) - 1;
-	while (len > x)
+	y = 0;
+	len = 0;
+
+	while (s[y] != '\0')
 	{
-		swap_char((s + len), (s + x));
-		x++;
-		len--;
+		y++;
 	}
 
-}
+	len = y - 1;
 
-
-/**
- *  * _strlen - function that returns the length of a string
- *   * @s: string whose length is returned
- *    * Return: 1
- */
-int _strlen(char *s)
-{
-	int x;
-
-	for (x = 0; s[x] != '\0'; x++)
+	for (x = 0; x < y / 2; x++)
 	{
+		yy = s[x];
+		s[x] = s[len];
+		s[len--] = yy;
 	}
-	return (x);
-}
-
-/**
- *  * swap_int - function that swaps values of two integers
- *   * @a: integer pointer 1
- *    * @b: integer pointer 2
- *
- */
-void swap_char(char *a, char *b)
-{
-	char x;
-
-	x = *a;
-	*a = *b;
-	*b = x;
 }
