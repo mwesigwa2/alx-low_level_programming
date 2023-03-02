@@ -14,11 +14,11 @@ char *_strncat(char *dest, char *src, int n)
 	len = 0;
 	while (dest[len] != '\0')
 	{
-		++len;
+		len++;
 	}
 
 	/*concatenate the strings*/
-	for (x = 0; x < n; ++x, ++len)
+	for (x = 0; x < n && src[x] != '\0'; len++, x++)
 	{
 		dest[len] = src[x];
 	}
