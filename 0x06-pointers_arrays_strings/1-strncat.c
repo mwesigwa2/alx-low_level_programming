@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	/*concatenate the strings*/
-	for (x = 0; x < n && src[x] != '\0'; ++x, ++len)
+	for (x = 0; x < n; ++x, ++len)
 	{
 		dest[len] = src[x];
 	}
