@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define UNUSED(expr) do { (void)(expr); } while (0)
 /**
  * main - prints number of arguments passed to it
  * @argc: number of srguments
@@ -7,7 +8,18 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argv;
-	printf("%d\n", argc);
+	int x;
+
+	if (argc == 1)
+	{
+		printf("%d\n", argc - 1);
+	}
+	else
+	{
+		for (x = 0; argv[x]; x++);
+
+		printf("%d\n", x - 1);
+	}
+
 	return (0);
 }
