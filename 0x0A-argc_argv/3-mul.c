@@ -21,10 +21,10 @@ int main(int argc, char *argv[])
 		mult = 1;
 		for (i = 1; i < 3; i++)
 		{
-			mult *= atoi(argv[i]); 
+			mult *= atoi(argv[i]);
 		}
 		printf("%d\n", mult);
-		
+
 	}
 	return (0);
 }
