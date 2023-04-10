@@ -24,7 +24,9 @@ unsigned int binary_to_uint(const char *b)
 			x += b[y] - '0';
 		}
 		else
+		{
 			return (0);
+		}
 		y++;
 
 	}
