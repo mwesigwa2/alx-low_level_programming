@@ -11,5 +11,8 @@ int get_endianness(void)
 	unsigned int x = 1;
 	char *y = (char *) &x;
 
-	return ((int) *y);
+	if (*y == 1)
+		return (1);
+	else
+		return (0);
 }
