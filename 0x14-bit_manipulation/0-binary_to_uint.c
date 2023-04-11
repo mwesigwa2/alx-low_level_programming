@@ -7,33 +7,6 @@
 * string b that is not 0 or 1, or when b is NULL.
 */
 
-/*
-unsigned int binary_to_uint(const char *b)
-{
-	unsigned int x = 0;
-	int y = 0;
-
-
-	if ((b[y] == '\0') || (b == NULL))
-		return (0);
-
-	while (b[y] != '\0')
-	{
-		if (b[y] == '0')
-		{
-			x <<= 1;
-		}
-		else if (b[y] == '1')
-		{
-			x = (x << 1) | 1;
-		}
-		else
-			return (0);
-		y++;
-	}
-	return (x);
-}*/
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int k, j, x = 0, y = 0;
